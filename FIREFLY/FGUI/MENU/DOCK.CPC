@@ -1,0 +1,91 @@
+CCP/ /Optimisation = 1
+
+SET/ P_Content = C:/CPCDOS/OS/FIREFLY/LOGIN/Philipe.FXT
+@#ContentContent Open/ %P_Content%
+
+
+Window/ Up_Bar
+    .Parameters     = "TYPE:4 CTN:1 SHADOW:0 TASKBAR:1"
+    .PX             = "1"
+    .PY             = "1"
+    .SX             = "1084"
+    .SY             = "20"
+    .BackColor      = "255,145,000"
+@#UP Create/
+End/ Window
+
+
+Textblock/ Hour
+    .Parameters     = "COL:1 BORD:0 UPD:1"
+    .Handle         = "%UP%"
+    .PX             = "940"
+    .PY             = "2"
+    .SX             = "80"
+    .SY             = "16"
+    .Text           = "${CPC.TIME}"
+    .TextColor      = "255,255,255"
+    .BackColor      = "255,145,000"
+Create/
+End/ Textblock
+
+Button/ Open_Bar
+    .Parameters     = "COL:0 IMGAUTO:2"
+    .Handle         = "%UP%"
+    .PX             = "1"
+    .PY             = "1"
+    .SX             = "50"
+    .SY             = "18"
+    .Text           = "Open"
+    .TextColor      = "247,247,247"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_GR.PNG"
+    .Event          = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+Textblock/ User_Philipe
+    .Parameters     = "COL:1 BORD:0"
+    .Handle         = "%UP%"
+    .PX             = "720"
+    .PY             = "2"
+    .SX             = "200"
+    .SY             = "16"
+    .Text           = "%ContentContent%"
+    .TextColor      = "255,255,255"
+    .BackColor      = "255,145,000"
+Create/
+End/ Textblock
+
+
+Function/ Open_Bar.Click()
+    exe/ & OS/FIREFLY/FGUI/MENU/INSIDE.CPC
+End/ Function
+
+
+Window/ WLC_WIN
+    .Title          = "Welcome User"
+    .PX             = "300"
+    .PY             = "100"
+    .SX             = "500"
+    .SY             = "250"
+    .BackColor      = "000,000,000"
+    .TitleColor     = "007,028,150"
+@#WLC_Var Create/
+End/ Window
+
+Picturebox/ WLC_PIC
+    .Handle         = "%WLC_Var%"
+    .Image          = "OS/FIREFLY/IMG/USR/WLC.PNG"
+    .PX             = "0"
+    .PY             = "0"
+    .SX             = "500"
+    .SY             = "250"
+Create/
+End/ Picturebox
+
+Refresh/ /all
+
+
+
+
+
+

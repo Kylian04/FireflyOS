@@ -1,0 +1,133 @@
+CCP/ /SET.LEVEL = 2
+
+CCP/ /Optimisation = 1
+
+SET/ FILE =  \#NULL
+
+SET/ DECMP = \#NULL
+
+Window/ Firezip
+    .Title          = "Firezip 1"
+    .Parameters     = "SIZ:0 SIZBTN:0 REDUCT:0"
+    .PX             = "400"
+    .PY             = "100"
+    .SX             = "500"
+    .SY             = "400"
+    .BackColor      = "255,158,011"
+    .TitleColor     = "000,000,000"
+@#FZ Create/
+End/ Window
+
+
+Textblock/ File_TXT
+    .Handle         = "%FZ%"
+    .Parameters     = "BORD:0 COL:0"
+    .BackColor      = "255,158,011"
+    .TextColor      = "040,040,040"
+    .Text           = "File"
+    .PX             = "90"
+    .PY             = "50"
+    .SX             = "85"
+    .SY             = "20"
+Create/
+End/ Textblock
+
+
+Textbox/ File_Box
+    .Handle         = "%FZ%"
+    .Parameters     = "COL:1"
+    .BackColor      = "040,040,040"
+    .TextColor      = "255,158,011"
+    .Text           = "OS/FIREFLY/.zip(or .rar)"
+    .PX             = "190"
+    .PY             = "50"
+    .SX             = "270"
+    .SY             = "20"
+Create/
+End/ Textbox
+
+
+// Choose your destiny
+
+
+Textblock/ Dest_TXT
+    .Handle         = "%FZ%"
+    .Parameters     = "COL:0"
+    .BackColor      = "255,158,011"
+    .TextColor      = "040,040,040"
+    .Text           = "Destination" 
+    .PX             = "90"
+    .PY             = "100"
+    .SX             = "90"
+    .SY             = "20"   
+Create/
+End/ Textblock
+
+
+Textbox/ Dest_Box
+    .Handle         = "%FZ%"
+    .Parameters     = "COL:1"
+    .BackColor      = "040,040,040"
+    .TextColor      = "255,158,011"
+    .Text           = "OS/FIREFLY/..."
+    .PX             = "190"
+    .PY             = "100"
+    .SX             = "270"
+    .SY             = "20"
+Create/
+End/ Textbox
+
+
+Button/ Unzip_BTN
+    .Handle         = "%FZ%"
+    .Parameters     = "COL:0"
+    .BackColor      = "040,040,040"
+    .TextColor      = "255,158,011"
+    .Text           = "UnZIP/RAR"
+    .PX             = "135"
+    .PY             = "150"
+    .SX             = "100"
+    .SY             = "30"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+End/ Button
+
+
+Function/ Unzip_BTN.MouseClick()
+    Textbox/ /modif:File_Box
+    @#FILE .Text
+    End/ Textbox
+
+    Textbox/ /modif:Dest_Box
+    @#DECMP .Text
+    End/ Textbox
+
+    GUI/ /CONSOLE
+
+    Decompress/ %FILE%  %DECMP%
+
+    GUI/
+
+    Delete/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+
+    CMD/ /THREAD Write/ /BIN C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg = OS/FIREFLY/IMG/FFLY2.png
+
+
+    @#FOND Open/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+    Set/ SCR_IMG = %FOND%
+    Gui/
+    Set/ /S FOND
+
+    Msgbox/ Look at your files in FireXplorer :) /Title:FirezipBox
+
+End/ Function
+
+
+
+
+
+
+
+
+
+

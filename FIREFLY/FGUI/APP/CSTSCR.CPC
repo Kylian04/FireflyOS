@@ -1,0 +1,95 @@
+Set/ Path = \#NULL
+
+Window/ CSTSCRWin
+    .Title          = "Custom Wallpaper"
+    .PX             = "200"
+    .PY             = "200"
+    .SX             = "400"
+    .SY             = "400"
+    .Opacity        = "225"
+    .TitleColor     = "015,001,001"
+    .BackColor      = "255,154,000"
+@#CSTHND Create/
+End/ Window
+
+
+Textbox/ Path_SCR
+    .Handle         = "%CSTHND%"
+    .PX             = "50"
+    .PY             = "50"
+    .SX             = "200"
+    .SY             = "20"
+    .Text           = "OS/FIREFLY/IMG/...PNG"
+    .TextColor      = "255,154,000"
+Create/
+End/ Textbox
+
+
+Button/ Path_BTN
+    .Handle         = "%CSTHND%"
+    .PX             = "280"
+    .PY             = "50"
+    .SX             = "80"
+    .SY             = "30"
+    .Text           = "Apply"
+    .Event          = "%_exe_path_%=Click"
+    .BackColor      = "255,208,000"
+    .TextColor      = "020,020,020"
+Create/
+End/ Button
+
+
+Textblock/ Text_Explorer
+    .Handle         = "%CSTHND%"
+    .Parameters     = "COL:0"
+    .PX             = "50"
+    .PY             = "250"
+    .SX             = "150"
+    .SY             = "30"
+    .Text           = "Find Pictures in "
+    .TextColor      = "226,226,226"
+Create/
+End/ Textblock
+
+
+Button/ Btn_Explorer
+    .Handle         = "%CSTHND%"
+    .PX             = "240"
+    .PY             = "240"
+    .SX             = "80"
+    .SY             = "30"
+    .Text           = "Explorer"
+    .BackColor      = "255,208,000"
+    .TextColor      = "020,020,020"
+    .Event          = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Function/ Btn_Explorer.Click()
+Exe/ & OS/FIREFLY/FGUI/APP/EXPLORER.CPC
+End/ Function
+
+
+Function/ Path_BTN.Click()
+
+    Textbox/ /modif:Path_SCR
+    @#Path .Text
+    Create/
+    End/ Textbox
+
+Delete/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+
+
+CMD/ /THREAD Write/ /BIN C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg = %Path%
+
+
+Open/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+
+
+Gui/ /CONSOLE 
+Set/ SCR_IMG = %Path%
+SYS/ /OS:FIREFLY
+Gui/
+
+End/ Function

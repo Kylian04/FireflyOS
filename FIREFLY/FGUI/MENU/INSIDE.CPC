@@ -1,0 +1,171 @@
+CCP/ /Optimisation = 1
+
+Window/ Panel
+    .Parameters     = "TYPE:4 CTN:1 SHADOW:0 CLOSE:0 REDUCT:0 SIZBTN:0"
+    .PX             = "1"
+    .PY             = "22"
+    .SX             = "150"
+    .SY             = "201"
+    .BackColor      = "255,145,000"
+    .Opacity        = "128"
+@#PNL Create/
+End/ Window
+
+Button/ GM
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "0"
+    .SX             = "150"
+    .SY             = "25"
+    .Opacity        = "128"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .TextColor      = "056,056,056"
+    .Text           = "Games"
+    .Event          = "OS/FIREFLY/FGUI/EVENT/MOUSECLG.CPC=MouseClick"
+Create/
+End/ Button
+
+Button/ APPS
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "25"
+    .SX             = "150"
+    .SY             = "25"
+    .Opacity        = "128"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .TextColor      = "056,056,056"
+    .Text           = "Apps"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+End/ Button
+
+Button/ TerminalBTN
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "50"
+    .SX             = "150"
+    .SY             = "25"
+    .Opacity        = "128"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .TextColor      = "056,056,056"
+    .Text           = "Terminal"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+End/ Button
+
+Button/ Panel_Close
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "75"
+    .SX             = "150"
+    .SY             = "25"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .Opacity        = "128"
+    .Text           = "Close"
+    .TextColor      = "056,056,056"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+End/ Button
+
+
+Button/ Shutdown
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "100"
+    .SX             = "150"
+    .SY             = "25"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .Opacity        = "128"
+    .Text           = "Shutdown"
+    .TextColor      = "056,056,056"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+End/ Button
+
+
+Button/ BCKG_APP
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "125"
+    .SX             = "150"
+    .SY             = "25"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .Opacity        = "128"
+    .Text           = "Background"
+    .TextColor      = "056,056,056"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+End/ Button
+
+Button/ CST_WLP
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "150"
+    .SX             = "150"
+    .SY             = "25"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .Opacity        = "128"
+    .Text           = "Custom WLP"
+    .TextColor      = "056,056,056"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+
+Button/ BTN_FZIP
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "175"
+    .SX             = "150"
+    .SY             = "25"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .Opacity        = "128"
+    .Text           = "Firezip"
+    .TextColor      = "056,056,056"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+
+Function/ Panel_Close.MouseClick()
+    Close/ Panel
+End/ Function    
+
+
+Function/ Shutdown.MouseClick()
+    SYS/ /SHUTDOWN
+End/ Function
+
+
+Function/ APPS.MouseClick()
+    Exe/ & OS/FIREFLY/FGUI/APP/DOCK_AP.CPC
+    Close/ Panel
+End/ Function
+
+Function/ TerminalBTN.MouseClick()
+    Exe/ & OS/FIREFLY/FGUI/APP/CONSOLE.CPC
+    Close/ Panel
+End/ Function
+
+
+Function/ BCKG_APP.MouseClick()
+    Exe/ & OS/FIREFLY/FGUI/APP/BACKG.CPC
+    Close/ Panel
+End/ Function
+
+Function/ CST_WLP.MouseClick()
+    Exe/ & OS/FIREFLY/FGUI/APP/CSTSCR.CPC
+    Close/ Panel
+End/ Function
+
+Function/ BTN_FZIP.MouseClick()
+    Exe/ & OS/FIREFLY/FGUI/APP/FZIP.CPC
+    Close/ Panel
+End/ Function
+
+
+    

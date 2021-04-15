@@ -1,0 +1,133 @@
+// Explorer GUI program test
+CCP/ /Optimisation = 1
+
+set/ actual_path = C:\CPCDOS\OS\FIREFLY\FGUI\FGE
+
+set/ DisplayMode = 2
+
+ccp/ /set.level = 3
+set/ Displaymode_ICO_Path = OS/MEDIA/GUI/btn_ico.PNG
+set/ Displaymode_LIST_Path = OS/MEDIA/GUI/btn_list.PNG
+ccp/ /set.level = 1
+
+
+
+// ===== Build window =====
+Window/ FireExplorer
+
+        .title          = "FireXplorer 1.0"
+        .parameters     = "TYPE:4 CTN:1 SIZ:1 SIZBTN:0"
+        .px             = "300"
+        .icon           = "OS/MEDIA/GUI/FORMATS/MFOLDER.PNG"
+        .py             = "200"
+        .sx             = "500"
+        .sy             = "300"
+        .opacity        = "255"
+        .WindowColor    = "100,100,100"
+        .TitleColor     = "039,039,039"
+        .backcolor      = "036,036,036"
+        .events         = "%_exe_path_%"
+
+        @#FireX create/
+End/ Window
+
+// ===== Build GUI objects in the window =====
+
+// %actual_path%
+
+
+ 
+explorer/ explore_gui
+        .handle         = "%FireX%"
+        .parameters     = "EXPLOREMODE:%DisplayMode%"
+        .px             = "0"
+        .py             = "23"
+        .sx             = "500"
+        .sy             = "250"
+        .opacity        = "255"
+        .textcolor      = "175,216,255"
+        .backcolor      = "216,104,000"
+        .text           = "C:\CPCDOS\OS\FIREFLY\FGUI\FGE"
+        .events         = "%_exe_path_%"
+        create/
+End/ explorer
+
+// ===== GUI events =====
+
+
+Button/ Close
+        .handle         = "%FireX%"
+        .px             = "475"
+        .py             = "0"
+        .sx             = "25"
+        .sy             = "25"
+        .text           = "X"
+        .textcolor      = "255,137,001"
+        .backcolor      = "000,000,000"
+        .events         = "%_exe_path_%=Click"
+        create/
+End/ Button
+
+
+
+Function/ img_display_mode.MouseClick()
+        // Switch between list / icon mode display
+
+        
+        explorer/ /modif:explore_gui
+
+                // Getting actual parameter
+		@#ParamActuel .parameters
+                
+                if/ "%ParamActuel%" == "EXPLOREMODE:0" then:
+                        set/ DisplayMode = 2
+                else:
+                        set/ DisplayMode = 0
+                End/ if
+
+                // Edit displaying mode
+                .parameters = "EXPLOREMODE:%DisplayMode%"
+
+                create/
+	end/ explorer
+
+
+        // Update picturebox display
+        picturebox/ /modif:img_display_mode
+
+
+                if/ "%DisplayMode%" == "0" then:
+                        set/ path_img = %Displaymode_ICO_Path%
+                else:
+                        set/ path_img = %Displaymode_LIST_Path%
+                End/ if
+
+                .Image	= "%path_img%"
+
+                create/
+        end/ Picturebox
+
+End/ function
+
+Function/ explore_gui.MouseClick()
+        // Update textbox path
+        // Get path text
+        explorer/ /modif:explore_gui
+                @#new_path .text
+        end/ explorer
+
+
+
+Function/ Button.Click()
+        Close/ FireExplorer
+        Close/ explore_gui
+End/ Function
+
+
+
+
+
+
+
+
+

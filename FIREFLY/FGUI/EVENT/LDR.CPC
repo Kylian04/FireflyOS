@@ -1,0 +1,27 @@
+// LOAD FGE FILES
+
+
+Declare/ PC98_PROGRAM_LOADER() : Niveau(5)
+
+
+
+Function/ PC98_PROGRAM_LOADER(PROG_TO_LAUNCH)
+  CCP/ /SET.LEVEL = 1
+
+
+   @#DATAPC OPEN/ %PROG_TO_LAUNCH%
+
+   write/ OS/FIREFLY/DOSBOX-X/dosbox.conf = %DATAPC%
+   // exe/ OS/ELIEOS/SYSIV/PROG_X86/PC98/PC98.CPC
+   gui/ /console
+   dos/ OS/FIREFLY/PC98.BAT
+   sys/ /OS:FIREFLY
+   gui/
+   refresh/ /all
+
+End/ Function
+
+
+
+
+

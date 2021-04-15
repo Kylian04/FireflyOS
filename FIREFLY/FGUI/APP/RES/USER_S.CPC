@@ -1,0 +1,168 @@
+SET/ N_Content = C:/CPCDOS/OS/FIREFLY/LOGIN/USER/NAME.FXT
+@#Name Open/ %N_Content%
+
+SET/ P_Content = C:/CPCDOS/OS/FIREFLY/LOGIN/Philipe.FXT
+@#ContentContent Open/ %P_Content%
+
+SET/ PA_Content = C:/CPCDOS/OS/FIREFLY/LOGIN/USER/PASS.FXT
+@#Pass Open/ %PA_Content%
+
+
+Window/ Ressources4
+	.Title				= "User Info"
+	.Parameters			= "TYPE:0"
+	.PX					= "150"
+	.Icon				= "OS/FIREFLY/IMG/ICN/MS.PNG"
+	.PY					= "150"
+	.SX					= "415"
+	.SY					= "450"
+	.BackColor  		= "050,050,050"
+@#SYSRE Create/
+End/ Window
+
+
+Button/ Head_1
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "0"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "CPU"
+	.Event				= "%_Exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_2
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "105"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "Memory"
+	.Event				= "%_Exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_3
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "210"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "CPCVER"
+	.Event				= "%_Exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_4
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "315"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text 				= "User"
+	.Event				= "%_Exe_path_%=Click"
+Create/
+End/ Button
+
+
+Textblock/ Name_AV
+	.Handle				= "%SYSRE%"
+	.Parameters			= "COL:0"
+	.PX					= "20"
+	.PY					= "100"
+	.SX					= "100"
+	.SY					= "30"
+	.BackColor  		= "050,050,050"
+	.Text				= "Name:"
+Create/
+End/ Textblock
+
+Textblock/ Name_AF
+	.Handle				= "%SYSRE%"
+	.Parameters			= "COL:0"
+	.PX					= "121"
+	.PY					= "100"
+	.SX					= "100"
+	.SY					= "30"
+	.BackColor  		= "050,050,050"
+	.Text				= "%Name%"
+Create/
+End/ Textblock
+
+Textblock/ User_Name_AV
+	.Handle				= "%SYSRE%"
+	.Parameters			= "COL:0"
+	.PX					= "20"
+	.PY					= "160"
+	.SX					= "100"
+	.SY					= "30"
+	.BackColor  		= "050,050,050"
+	.Text				= "Username:"
+Create/
+End/ Textblock
+
+Textblock/ User_Name_AF
+	.Handle				= "%SYSRE%"
+	.Parameters			= "COL:0"
+	.PX					= "120"
+	.PY					= "160"
+	.SX					= "100"
+	.SY					= "30"
+	.BackColor  		= "050,050,050"
+	.Text 				= "%ContentContent%"
+Create/
+End/ Textblock
+
+Textblock/ Password_AV
+	.Handle				= "%SYSRE%"
+	.Parameters			= "COL:0"
+	.PX					= "20"
+	.PY					= "200"
+	.SX					= "100"
+	.SY					= "30"
+	.BackColor  		= "050,050,050"
+	.Text				= "Password:"
+Create/
+End/ Textblock
+
+Textblock/ Password_AF
+	.Handle				= "%SYSRE%"
+	.Parameters			= "COL:0"
+	.PX					= "120"
+	.PY					= "200"
+	.SX					= "100"
+	.SY					= "30"
+	.BackColor  		= "050,050,050"
+	.TextColor			= "255,060,060"
+	.Text				= "%Pass%"
+Create/
+End/ Textblock
+
+Function/ Head_1.Click()
+Exe/ & OS/FIREFLY/FGUI/APP/RES/CPU.CPC
+Close/ Ressources4
+End/ Function
+
+
+Function/ Head_2.Click()
+Exe/ & OS/FIREFLY/FGUI/APP/RES/MEMORY.CPC
+Close/ Ressources4
+End/ Function
+
+
+Function/ Head_3.Click()
+Exe/ & OS/FIREFLY/FGUI/APP/RES/CPCVER.CPC
+Close/ Ressources4
+End/ Function

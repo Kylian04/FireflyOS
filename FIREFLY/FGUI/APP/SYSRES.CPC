@@ -1,0 +1,105 @@
+CCP/ /Optimisation = 1
+
+Window/ Ressources
+	.Title				= "Global Settings"
+	.Parameters			= "TYPE:0"
+	.PX					= "150"
+	.PY					= "150"
+	.SX					= "415"
+	.SY					= "450"
+	.Icon				= "OS/FIREFLY/IMG/ICN/MS.PNG"
+	.BackColor			= "050,050,050"
+@#SYSRE Create/
+End/ Window
+
+
+Button/ Head_1
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "0"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "CPU"
+	.Event				= "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_2
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "105"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "Memory"
+	.Event				= "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_3
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "210"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "CPCVER"
+	.Event				= "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_4
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "315"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text 				= "User"
+	.Event				= "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Textblock/ Aide
+	.Handle				= "%SYSRE%"
+	.Parameters			= "BORD:0 COL:0"
+	.PX					= "10"
+	.PY					= "120"
+	.SX					= "350"
+	.SY					= "300"
+	.TextColor  		= "255,255,255"
+	.Text				= "CPU : See How FIREFLY use your CPU %CPC.CR% Memoire : See How FIREFLY use your Memory %CPC.CR% CPCVER : See the version of CPCDOS"
+Create/
+End/ Textblock
+
+
+Function/ Head_1.Click()
+exe/ & OS/FIREFLY/FGUI/APP/RES/CPU.CPC
+Close/ Ressources
+End/ Function
+
+
+Function/ Head_2.Click()
+exe/ & OS/FIREFLY/FGUI/APP/RES/MEMORY.CPC
+Close/ Ressources
+End/ Function
+
+Function/ Head_3.Click()
+exe/ & OS/FIREFLY/FGUI/APP/RES/CPCVER.CPC
+Close/ Ressources
+End/ Function
+
+Function/ Head_4.Click()
+exe/ & OS/FIREFLY/FGUI/APP/RES/USER_S.CPC
+Close/ Ressources
+End/ Function
+

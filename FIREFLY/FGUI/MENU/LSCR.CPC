@@ -1,0 +1,185 @@
+SET/ User
+SET/ Name
+SET/ Pass
+
+// j'ai passer pas mal de temps sur cette ecran de demarrage j'en suis fier xD
+
+
+Window/ FLSCR
+    .Parameters         = "TYPE:5"
+    .PX                 = "0"
+    .PY                 = "0"
+    .SX                 = "1024"
+    .SY                 = "768"
+    .WindowColor        = "000,000,000"
+    .BackColor          = "000,000,000"
+    .TitleColor         = "000,000,000"
+@#LoadScr Create/
+End/ Window
+
+
+Picturebox/ SCREEN
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%LoadScr%"
+    .Image              = "OS/FIREFLY/IMG/LCKSCR.PNG"
+    .PX                 = "0"
+    .PY                 = "0"
+    .SX                 = "1024"
+    .SY                 = "768"
+Create/
+End/ Picturebox
+
+Button/ Start_BTN
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%LoadScr%"
+    .Text               = "."
+    .PX                 = "1"
+    .PY                 = "1"
+    .SX                 = "1"
+    .SY                 = "1"
+    .Image              = "OS/FIREFLY/IMG/ICN/BTN/BTN_BLK.PNG"
+    .BackColor          = "044,044,044"
+    .TextColor          = "230,138,000"
+    .Event              = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Textbox/ User_Name
+    .Parameters         = "EDIT:1 COL:1"
+    .Handle             = "%LoadScr%"
+    .Text               = "Username..."
+    .PX                 = "400"
+    .PY                 = "350"
+    .SX                 = "200"
+    .SY                 = "20"
+    .BackColor          = "034,034,034"
+    .TextColor          = "230,138,000"
+Create/
+End/ Textbox
+
+
+Textbox/ Name
+    .Parameters         = "EDIT:1 COL:1"
+    .Handle             = "%LoadScr%"
+    .Text               = "Name..."
+    .PX                 = "400"
+    .PY                 = "380"
+    .SX                 = "200"
+    .SY                 = "20"
+    .BackColor          = "034,034,034"
+    .TextColor          = "230,138,000"
+Create/
+End/ Textbox
+
+Textbox/ Password
+    .Parameters         = "EDIT:1 COL:1"
+    .Handle             = "%LoadScr%"
+    .Text               = "Password..."
+    .PX                 = "400"
+    .PY                 = "410"
+    .SX                 = "200"
+    .SY                 = "20"
+    .BackColor          = "034,034,034"
+    .TextColor          = "230,138,000"
+Create/
+End/ Textbox
+
+
+Picturebox/ Circle_User
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%LoadScr%"
+    .Image              = "OS/FIREFLY/IMG/USR/CR_OR.PNG"
+    .PX                 = "450"
+    .PY                 = "220"
+    .SX                 = "100"
+    .SY                 = "100"
+Create/
+End/ Picturebox
+
+
+
+Textblock/ USR_MSG
+    .Parameters         = "COL:0 BORD:0"
+    .Handle             = "%LoadScr%"
+    .Text               = "Create a username :)"
+    .PX                 = "415"
+    .PY                 = "325"
+    .SX                 = "200"
+    .SY                 = "100"
+    .TextColor          = "230,138,000"
+Create/
+End/ Textblock
+
+
+Button/ USR_BTN
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%LoadScr%"
+    .Text               = "Create"
+    .PX                 = "620"
+    .PY                 = "345"
+    .SX                 = "80"
+    .SY                 = "30"
+    .Image              = "OS/FIREFLY/IMG/ICN/BTN/BTN_BLK.PNG"
+    .BackColor          = "044,044,044"
+    .TextColor          = "230,138,000"
+    .Event              = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Function/ USR_BTN.Click()
+    Textbox/ /modif:User_Name
+        @#User .Text 
+        .TextColor  = "230,138,000"
+        Create/
+    End/ Textbox
+
+    Textbox/ /modif:Name
+        @#Name .Text
+        .TextColor  = "230,138,000"
+        Create/
+    End/ Textbox
+
+    Textbox/ /modif:Password
+        @#Pass .Text
+        .TextColor  = "230,138,000"
+        Create/
+    End/ Textbox
+
+    Textblock/ /modif:USR_MSG
+        .Text       = "Welcome to FireFlyOS %User%"
+        .TextColor  = "230,138,000"
+        .PX         = "400"
+        .PY         = "550"
+        .SX         = "600"
+        .SY         = "100"
+        Create/
+    End/ Textblock
+
+    Button/ /modif:Start_BTN
+        .Text       = "Start"
+        .PX         = "710"
+        .PY         = "345"
+        .SX         = "80"
+        .SY         = "30"
+        .Image      = "OS/FIREFLY/IMG/ICN/BTN/BTN_BLK.PNG"
+        .BackColor  = "044,044,044"
+        .TextColor  = "230,138,000"
+        .Event      = "%_exe_path_%=Click"
+        Create/
+    End/ Button
+
+    CMD/ /THREAD    Write/ C:/CPCDOS/OS/FIREFLY/LOGIN/Philipe.FXT = %User%
+
+    CMD/ /THREAD    Write/ C:/CPCDOS/OS/FIREFLY/LOGIN/USER/NAME.FXT = %Name%
+
+    CMD/ /THREAD    Write/ C:/CPCDOS/OS/FIREFLY/LOGIN/USER/PASS.FXT = %Pass%
+
+    
+End/ Function
+
+Function/ Start_BTN.Click()
+    Exe/ & OS/FIREFLY/FGUI/MENU/DOCK.CPC
+    Close/ FLSCR
+End/ Function

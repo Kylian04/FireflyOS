@@ -1,0 +1,12 @@
+[dos]
+
+umb=false
+
+
+[autoexec]
+
+config -set cpu cycles=50000
+mount c C:\CPCDOS\OS\FIREFLY\GAMES\
+c:
+cd BLOOD
+BLOOD.exe

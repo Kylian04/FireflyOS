@@ -1,0 +1,81 @@
+
+CCP/ /Optimization = 1
+
+
+// Charger le profil graphique PAR DEFAUT (Obligatoire)
+exe/ & %CPC.REP.KRNL%/CONFIG/ENV_GUI/env_gui.cpc
+
+// Background image
+SET/ SCR_IMG = OS/FIREFLY/IMG/FFLY2.PNG
+
+// Et APRES vous pouvez charger le votre
+
+set/ SCR_RES = 1024x768
+set/ SCR_BIT = 24
+
+ccp/ /fix.niveau = 4
+
+
+// **************************************************
+// ** [EN] Operating system informations           **
+// ** [FR] Informations du systeme d'exploitation  **
+// **************************************************
+
+
+SET/ OS_NAME = FireFly
+SET/ OS_VERSION = 2.3
+SET/ OS_Author = Kylian
+SET/ OS_Compagny = 04
+SET/ OS_Created = 8-14-2020
+SET/ OS_build = 2021.4
+SET/ OS_codename = Australia
+
+
+// ***************************************************
+// ** [EN] Operating system configuration           **
+// ** [FR] Configuration du systeme d'exploitation  **
+// ***************************************************
+
+SET/ HOST_OS = OS/FIREFLY
+SET/ GUI_OS = %HOST_OS%/MEDIA/GUI
+
+
+ccp/ /fix.niveau = 3
+SET/ CPC_GUI.WINDOW.BT_CLOSE = OS/FIREFLY/MD/CLOSE.png
+SET/ CPC_GUI.LOAD_IMG = OS/FIREFLY/MD/LOAD.png
+SET/ CPC_GUI.WINDOW.TITLE_IMG = OS/FIREFLY/MD/BAR.png
+SET/ SCR_IMG_MODE = 2
+
+ccp/ /set.level = 5
+sys/ /fileformat-update OS/FIREFLY/FGUI/FORMATS.INI
+
+ccp/ /fix.niveau = 4
+
+GUI/
+
+sys/ /fileformat-gui-load
+
+set/ pos_x = 0
+set/ pos_y = 25
+set/ size_x = %CPC.SCR.X%
+set/ size_y = %CPC.SCR.Y%
+
+set/ handle_desktop = /F:Init_Desktop(MyDesktop, ./, %pos_x%, %pos_y%, %size_X%, %size_Y%)
+
+
+// ----------------------------------------------------------- //
+//                  ------ C O D E ------                      //
+// ----------------------------------------------------------- //
+
+// Creer un nouveau processus nomme '_MENUS_'
+@#PID_MENU SYS/ /processus _MENUS_
+
+
+exe/ & OS/FIREFLY/FGUI/EVENT/LDR.CPC
+
+// Executer barre.CPC dans le processus "_MENUS_" via son PID
+CMD/ /PID:%PID_MENU% exe/ & OS/FIREFLY/FGUI/MENU/LSCR.CPC
+
+exe/ & OS/FIREFLY/BACKGR/VALEURC.CPC
+
+Refresh/ /all

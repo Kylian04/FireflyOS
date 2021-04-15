@@ -1,0 +1,198 @@
+CCP/ /Optimisation = 1
+
+Window/ BackGround_1
+    .Title          = "Background Panel"
+    .Parameters     = "TYPE:4 CTN:1 SHADOW:0 CLOSE:0 SIZBTN:0 REDUCT:0"
+    .PX             = "724"
+    .PY             = "25"
+    .SX             = "300"
+    .SY             = "743"
+    .BackColor      = "255,154,000"
+    .Opacity        = "150"
+@#BCK Create/
+End/ Window
+
+Button/ Close_BCKG
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0"
+    .PX             = "260"
+    .PY             = "703"
+    .SX             = "40"
+    .SY             = "40"
+    .Text           = "X"
+    .BackColor      = "255,019,019"
+    .TextColor      = "255,153,000"
+    .Event          = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Picturebox/ OrangeB_Pic
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0 IMGAUTO:2"
+    .Image          = "OS/FIREFLY/IMG/OrangeB.png"
+    .PX             = "100"
+    .PY             = "50"
+    .SX             = "100"
+    .SY             = "100"
+Create/
+End/ Picturebox
+
+
+Button/ OrangeB_BTN
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0"
+    .BackColor      = "255,208,000"
+    .TextColor      = "020,020,020"
+    .Text           = "Apply"
+    .PX             = "110"
+    .PY             = "160"
+    .SX             = "80"
+    .SY             = "30"
+    .Event          = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Picturebox/ FFLY2_Pic
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0 IMGAUTO:2"
+    .Image          = "OS/FIREFLY/IMG/FFLY2.png"
+    .PX             = "100"
+    .PY             = "200"
+    .SX             = "100"
+    .SY             = "100"
+Create/
+End/ Picturebox
+
+Button/ FFLY2_BTN
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0"
+    .BackColor      = "255,208,000"
+    .TextColor      = "020,020,020"
+    .Text           = "Apply"
+    .PX             = "110"
+    .PY             = "310"
+    .SX             = "80"
+    .SY             = "30"
+    .Event          = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Picturebox/ FFLY1_Pic
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0 IMGAUTO:2"
+    .Image          = "OS/FIREFLY/IMG/FIRESCR.png"
+    .PX             = "100"
+    .PY             = "350"
+    .SX             = "100"
+    .SY             = "100"
+Create/
+End/ Picturebox
+
+Button/ FFLY1_BTN
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0"
+    .BackColor      = "255,208,000"
+    .TextColor      = "020,020,020"
+    .Text           = "Apply"
+    .PX             = "110"
+    .PY             = "460"
+    .SX             = "80"
+    .SY             = "30"
+    .Event          = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+Picturebox/ Crystal_Pic
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0 IMGAUTO:2"
+    .Image          = "OS/FIREFLY/IMG/Crystal.png"
+    .PX             = "100"
+    .PY             = "500"
+    .SX             = "100"
+    .SY             = "100"
+Create/
+End/ Picturebox
+
+Button/ Crystal_BTN
+    .Handle         = "%BCK%"
+    .Parameters     = "COL:0"
+    .BackColor      = "255,208,000"
+    .TextColor      = "020,020,020"
+    .Text           = "Apply"
+    .PX             = "110"
+    .PY             = "610"
+    .SX             = "80"
+    .SY             = "30"
+    .Event          = "%_exe_path_%=Click"
+Create/ 
+End/ Button
+
+
+Function/ Close_BCKG.Click()
+    Close/ BackGround_1
+End/ Function
+
+
+Function/ OrangeB_BTN.Click()
+
+Delete/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+
+CMD/ /THREAD Write/ /BIN C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg = OS/FIREFLY/IMG/OrangeB.png
+
+
+@#FOND Open/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+Set/ SCR_IMG = %FOND%
+Gui/
+Set/ /S FOND
+
+End/ Function
+
+
+
+Function/ FFLY2_BTN.Click()
+
+Delete/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+
+CMD/ /THREAD Write/ /BIN C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg = OS/FIREFLY/IMG/FFLY2.png
+
+
+@#FOND Open/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+Set/ SCR_IMG = %FOND%
+Gui/
+Set/ /S FOND
+
+End/ Function
+
+
+Function/ FFLY1_BTN.Click()
+
+Delete/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+
+CMD/ /THREAD Write/ /BIN C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg = OS/FIREFLY/IMG/FIRESCR.png
+
+
+@#FOND Open/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+Set/ SCR_IMG = %FOND%
+Gui/
+Set/ /S FOND
+
+End/ Function
+
+
+Function/ Crystal_BTN.Click()
+
+Delete/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+
+CMD/ /THREAD Write/ /BIN C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg = OS/FIREFLY/IMG/Crystal.png
+
+
+@#FOND Open/ C:/CPCDOS/OS/FIREFLY/BACKGR/bckgrnd.cfg
+Set/ SCR_IMG = %FOND%
+Gui/
+Set/ /S FOND
+
+End/ Function
+

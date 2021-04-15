@@ -1,0 +1,94 @@
+Window/ Down_GM
+    .Parameters         = "TYPE:4 CTN:1 SHADOW:0 CLOSE:0 SIZBTN:0 REDUCT:0"
+    .PX                 = "1"
+    .PY                 = "450"
+    .SX                 = "1024"
+    .SY                 = "318"
+    .Opacity            = "100"
+    .BackColor          = "255,145,000"
+@#DGM Create/
+End/ Window
+
+Button/ Close_GM
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%DGM%"
+    .PX                 = "999"
+    .PY                 = "0"
+    .SX                 = "25"
+    .SY                 = "25"
+    .Text               = "X"
+    .TextColor          = "223,223,223"
+    .Image              = "OS/FIREFLY/IMG/ICN/BTN/BTN_RD.PNG"
+    .Event              = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Picturebox/ DOSBX
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%DGM%"
+    .PX                 = "240"
+    .PY                 = "50"
+    .SX                 = "200"
+    .SY                 = "200"
+    .Image              = "OS/FIREFLY/IMG/DSB.PNG"
+Create/
+End/ Picturebox
+
+Button/ DOSBX_BTN
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%DGM%"
+    .PX                 = "300"
+    .PY                 = "260"
+    .SX                 = "80"
+    .SY                 = "50"
+    .Text               = "DOSBOX"
+    .Image              = "OS/FIREFLY/IMG/ICN/BTN/BTN_RD.PNG"
+    .TextColor          = "233,233,233"
+    .Event              = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Picturebox/ Emiko
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%DGM%"
+    .PX                 = "540"
+    .PY                 = "50"
+    .SX                 = "200"
+    .SY                 = "200"
+    .Image              = "OS/FIREFLY/IMG/ICN/Emiko.PNG"
+Create/
+End/ Picturebox
+
+
+Button/ Emiko_BTN
+    .Parameters         = "COL:0 IMGAUTO:2"
+    .Handle             = "%DGM%"
+    .PX                 = "600"
+    .PY                 = "260"
+    .SX                 = "80"
+    .SY                 = "50"
+    .Text               = "Emiko"
+    .Image              = "OS/FIREFLY/IMG/ICN/BTN/BTN_BL.PNG"
+    .TextColor          = "233,233,233"
+    .Event              = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Function/ Emiko_BTN.Click()
+    Exe/ & OS/FIREFLY/GAMES/EMIKO/MAIN.CPC
+    Close/ Down_GM
+End/ Function
+
+
+Function/ DOSBX_BTN.Click()
+    Exe/ & OS/FIREFLY/FGUI/APP/FGE_SLC.CPC
+    Close/ Down_GM
+End/ Function
+
+
+Function/ Close_GM.Click()
+    Close/ Down_GM
+End/ function

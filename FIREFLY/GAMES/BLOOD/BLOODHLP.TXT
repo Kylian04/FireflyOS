@@ -1,0 +1,949 @@
+BLOOD(TM) Shareware v 1.11
+
+You carved your soul to shreds in service of a forgotten, terrible god, but 
+all your loyalty bought you were false promises and betrayal. You were among 
+the Chosen, Tchernobog's most esteemed generals, dark angels who were to stand
+by his side and inherit the earth. But that was not to be.
+
+Cast down and once again a prisoner of mortal flesh, you must seek out the 
+rest of the Chosen-Ishmael, Gabriel, and your beloved Ophelia. Only with your 
+combined strength can you find your way back to the Hall of the Epiphany and 
+face Tchernobog again. Only then will you understand why he has forsaken you.
+
+Your journey will not be an easy one, but one thing is certain. 
+
+Blood will flow.
+
+MINIMUM SYSTEM REQUIREMENTS:
+o CPU: Pentium: 75MHz or better
+o Memory: 16MB RAM
+o Available Hard-Disk Space: 40MB
+o Distribution Media Drive: 4X CD-ROM drive
+o Audio System: 100% Sound Blaster Compatible
+o Video System: VGA 256-color
+o Input Devices: Keyboard, Mouse, Gamepad, Advanced Input
+o DOS 6.2 or better
+
+INSTALLATION
+CD-ROM DOS Installation
+1. Place the CD in your CD-ROM drive (typically drive D:).
+2. Switch to your CD-ROM drive by typing D: (or the appropriate drive letter 
+   designation) and press [ENTER]
+3. Type INSTALL and press [ENTER] to start the installation program
+4. Follow the on-screen prompts
+
+Once the game is installed, type SETUP from within your Blood directory to 
+configure the game to your system. If you are unsure of the settings you 
+should choose, consult your computer or sound card manual for assistance. 
+If you know you have a sound card and speakers but are unsure of the brand, 
+select SoundBlaster for both Music and Sound Card as it is the most common.
+
+WINDOWS95 INSTALLATION
+1. Place the CD in your CD-ROM drive (typically drive D:). Unless you
+   have autorun disabled, the Blood Setup will start.
+
+   If it doesn't, or if you have an earlier version of Windows 95, 
+   continue with the following steps:
+2. Click on the My Computer icon on your desktop
+3. Click on the icon for your CD-ROM drive
+4. Double-click the INSTALL icon to start the installation program
+5. Follow the on-screen prompts
+
+Once the game is installed, double click the SETUP icon in your Blood folder 
+to configure the game to your system. If you are unsure of the settings you 
+should choose, either consult your computer or sound card manual or right 
+click your My Computer icon and select the Device Manager tab, which should 
+list the necessary information. If you know you have a sound card and speakers
+but are unsure of the brand, select SoundBlaster for both Music and Sound Card
+as it is the most common.
+
+If you experience problems running Blood in Windows95, you will have to 
+restart your computer in MS-DOS mode. Click on the Start button and select 
+Shut Down. Select Restart the computer in MS-DOS mode? and click OK. When your
+computer restarts, follow the DOS installation instructions above.
+
+IMPORTANT!
+Windows 3.1 users must exit to DOS before installing Blood. Click File in the 
+top left hand corner of your Program Manager window, select Exit Windows, 
+and then click OK. Note that each time you play you'll have to exit Windows 
+and then switch to the Blood directory (by typing CD\BLOOD and then pressing 
+[ENTER]).
+
+STARTING A NEW GAME
+When you select NEW GAME from the main menu, you will be given a choice 
+between four episodes-The Way of All Flesh, Even Death May Die, Farewell 
+to Arms, and Dead Reckoning. The Way of All Flesh will bring you to the 
+aerie of Cheogh, the stone gargoyle, where you will seek your beloved 
+Ophelia. Even Death May Die marks your quest for Gabriel, who is held in 
+the lair of Shial, the Mother of Spiders. Farewell to Arms will lead you 
+before Cerberus, who guards your comrade Ishmael. In Dead Reckoning, you 
+will face Tchernobog himself in the Hall of the Epiphany, where perhaps 
+you will learn the reason for your banishment.
+
+Helpful Hint:	Playing the episodes in order will preserve the flow of 
+the game story and ensure a more gradual increase in difficulty.
+
+SKILL LEVEL
+When beginning a new game, you must select a skill level. Blood's skill levels
+affect more than the number of monsters or powerups you will find along the 
+way -- the harder the level, the more damage monsters can take and dish out. 
+
+CONFIGURING THE OPTIONS
+Mouse Sensitivity
+Controls the responsiveness of the game to mouse movement. The higher the 
+sensitivity, the faster you'll spin.
+
+KEY TURN SPEED
+Like mouse sensitivity, key turn speed affects responsiveness to movement 
+controls. This option gives keyboarders a fighting chance against mouse 
+players.
+
+GAMMA
+Adjusts screen brightness. Note that higher gamma settings tend to reduce 
+contrast and may also overbrighten areas that we've intentionally left dark.
+
+DETAIL
+Changes the detail level. If you are experiencing choppy image quality, try 
+reducing the detail level a notch or two.
+
+SOUND EFFECTS VOLUME
+Adjusts the volume of ingame sound effects and ambient sounds.
+
+MUSIC VOLUME
+Adjusts the volume of background music.
+
+3D AUDIO
+Turns on and off the 3D audio processing in the game.  Turning this off
+may result in faster frame rate.  In addition, some sound cards may have
+problems with this processing.  Turning this off may allow Blood to work
+on these incompatible cards.
+
+CROSSHAIR
+Toggles a crosshair for easier aiming.
+
+SHOW WEAPONS
+Enabling this option allows you to see which weapon your opponent is using in 
+BloodBath. Weapons will appear above enemies' heads.
+
+SLOPE TILTING
+Controls whether or not player's view tilts in the direction of slopes. 
+Disable this option to keep your view directed at the horizon.
+
+VIEW SWAYING
+Toggles horizontal "swaying" of player weapons.
+
+VIEW BOBBING
+Toggles the vertical "bobbing" of player weapons. We recommend that you 
+disable view bobbing if you experience nausea while playing Blood.
+
+CONTROLLING THE ACTION
+Becoming comfortable with the movement controls is the key to success in 
+Blood. These are the functions you should master if you hope to defeat 
+Tchernobog. Our default controls are listed below, but you are free to 
+customize your controllers to suit your playing style.
+
+Note that Blood supports keyboard, mouse, joystick, and Gravis GamePad(tm).  
+
+MOUSE
+Button 1		Fire the selected weapon's primary fire
+Button 2		Fire the selected weapon's alternate fire
+Button 3		Walk forward
+Double-click Button 1	Activate item or open door
+
+JOYSTICK
+Direction		Movement
+Button 1		Fire the selected weapon's primary fire
+Button 2		Strafe
+Button 3		Run
+Button 4		Activate item or open door
+Double-click Button 2	Use selected inventory item
+Double-click Button 3	Jump
+Double-click Button 4	Crouch
+
+GRAVIS GAMEPAD(tm)
+Direction		Movement
+Button 1		Fire the selected weapon's primary fire
+Button 2		Strafe
+Button 3		Run
+Button 4		Activate item or open door
+Double-click Button 2	Use selected inventory item
+Double-click Button 3	Jump
+Double-click Button 4	Crouch
+
+KEYBOARD
+Arrows			Movement
+Spacebar		Use items or open doors
+Tab			Toggle automap
+F			Toggle map follow mode
+Shift			Run
+Caps Lock		Auto run
+Alt			Strafe
+,			Strafe left
+.			Strafe right
+Ctrl			Fire the selected weapon's primary fire
+X			Fire the selected weapon's alternate fire
+A			Jump
+Z			Crouch
+PgUp			Look up
+PgDown			Look down
+Home			Aim up
+End			Aim down
+Backspace		Turn around
+[ or ]			Cycle through inventory items
+Enter			Use selected inventory item
+C			Use Beast Vision*
+B			Use Crystal Ball*
+G			Use Guns Akimbo*
+J			Use Jump Boots*
+M			Use Doctor's Bag*
+P			Use Proximity Bomb*
+R			Use Remote Detonator*
+
+* Assumes that you have this item in your inventory.
+
+WEAPONS
+Tchernobog's minions are as well armed as they are belligerent, so you will 
+need to gather an arsenal of your own in order to defeat them. Each weapon 
+has a primary fire and an alternate fire, and many can be powered up with the 
+Guns Akimbo bonus.
+
+NOTE: New weapon modes have been added in the Plasma Pak.
+
+PITCHFORK
+This handy tool can be very effective if you can get close enough to your foes
+to use it on them. It doesn't need ammo, so you'll always have it to fall back
+on if you need it.
+Ammo: None
+
+FLARE GUN
+Fires burning projectiles that lodge easily in flesh and continue to burn for 
+a short period of time. Unless you dive into water, you'll take damage until 
+the flare burns itself out, by which time it may be too late. The alternative 
+fire launches a starburst flare that douses a large area with flames. Can 
+provide effective crowd control.
+Ammo: Flares
+
+SAWED-OFF SHOTGUN
+A trusty companion if ever there was one. It doesn't have great range, but it 
+packs a hell of a wallop up close. Can be fired either a barrel at a time or 
+both at once for extra damage.
+Ammo: Shotgun shells
+
+THOMPSON'S MACHINE GUN
+The Tommy Gun is a favorite of the Cabal for its rapid rate of fire and 
+impressive accuracy. On the down side, it chews up ammo quickly. The 
+alternative mode is a strafing attack that covers a wider area with twice as 
+many bullets, which is an effective way to clear out a room.
+Ammo: Bullet drums 
+
+DYNAMITE BUNDLES
+Light one up and chuck it at a group of zombies and you'll be rewarded with 
+red rain and chunks of rotted flesh on the brim of your hat. The longer you 
+hold down the fire button, the farther you'll throw the bundle. Watch the 
+meter on the status bar to gauge the distance. The primary mode explodes on 
+impact, while the alternative mode will burn all the way down before it 
+explodes, making for some interesting traps.
+Ammo: Dynamite bundle
+
+REMOTE DETONATORS (COMPLETE VERSION ONLY)
+Remotes work like dynamite bundles, except that you can detonate them at will.
+You can bounce them off walls or ceilings if you're afraid to peek around a 
+corner. The alternative fire drops a remote at your feet, and you can hit the 
+alt-fire key again to place additional remotes without detonating those you've
+already placed.
+Ammo: Remote detonator
+
+PROXIMITY DETONATORS (COMPLETE VERSION ONLY)
+These are by far the nastiest explosives you'll come across. You can scatter 
+them around and concern yourself with other matters. As soon as someone steps 
+near one, you'll hear a far-off boom and accompanying shrieks of agony. Use 
+the alt-fire to drop them at your feet. Also, remember where you've dropped 
+proximities or you may fall prey to your own trap.
+Ammo: Proximity detonator
+
+INCINERATOR
+This monstrous weapon launches a huge ball of flaming napalm at an extremely 
+high velocity. If the initial explosion doesn't kill your enemy, the burning 
+probably will. Best used with extreme caution, especially in tight areas. The 
+alt-fire launches several napalm projectiles, covering a wider area but also 
+chewing up a lot more ammo.
+Ammo: Gasoline cans
+
+VOODOO DOLL (COMPLETE VERSION ONLY)
+The power of the voodoo doll is immense, but far subtler than that of a 
+firearm. (The rest of this description to be determined pending finalization 
+of the alt-fire attack.)
+Ammo: Voodoo doll
+
+AEROSOL CAN (COMPLETE VERSION ONLY)
+Hairspray may not seem like the most daunting weapon, but apply it to a 
+cigarette lighter and you've got an instant flamethrower (don't try this at 
+home). While its range is rather limited, its effectiveness is quite 
+impressive. You can also light one up like a Molotov cocktail and toss it into
+a group of adversaries. Hit alt-fire a second time after igniting a can to 
+drop it at your feet -- it will explode once it burns down.
+
+TESLA CANNON (COMPLETE VERSION ONLY)
+This powerful prototype weapon packs a mighty load of amperage. Nikola Tesla 
+would be proud,
+
+LIFE LEECH (COMPLETE VERSION ONLY)
+This artifact draws its power from the life energy of your foes. Run low on 
+ammo and it saps your own strength!
+
+ITEMS
+
+You will find various items in your journeys that will help you along your 
+way. Some items will be added to your inventory -- you can use these as 
+needed. Others will be activated the moment you pick them up and wear off 
+after a short while, so make the best of them while you can.
+
+HEALTH & ARMOR
+
+ESSENCE
+Boosts your health by 20 points, up to 100.
+
+LIFE SEED
+Adds 100 points to your health, up to 200 total.
+
+BODY ARMOR
+Adds 100 Body armor, which is useful against physical damage such as bullets
+and explosions.
+
+FIRE ARMOR
+Adds 100 fire resistant armor, which is useful against flares, flaming 
+aerosol, and the residual effects of dynamite and napalm.
+
+SPIRIT ARMOR
+Adds 100 spiritual armor, which will absorb voodoo and hellstaff damage.
+
+BASIC ARMOR
+Adds 50 of each armor type.
+
+SUPER ARMOR
+Adds 200 points of body, fire, and spirit armor.
+
+
+POWERUPS & INVENTORY ITEMS
+
+DEATH MASK
+Provides temporary invulnerability to all attacks. Note that you are still 
+susceptible to physics, which means a dynamite blast may hurl you off a cliff.
+
+GUNS AKIMBO
+Gives you double-fisted killing power with one-handed weapons, such as the 
+shotgun, flare gun, and Tommy gun.
+
+CRYSTAL BALL (PRESS "C" TO ACTIVATE)
+In  BloodBath, this powerup enables you to see your enemies regardless of 
+where they are. Cycle through your foes by repeatedly hitting the hotkey or 
+Enter. To deactivate the crystal ball and save it for later, scroll through 
+all opponents and it will turn off.
+
+BEAST VISION (PRESS "B" TO ACTIVATE)
+Makes your enemies stand out even in utter darkness. Very useful for spotting
+concealed guards.
+
+DR.'S BAG (PRESS "M" TO ACTIVATE)
+Will restore up to 100 points of health when activated. The unused medicine 
+will remain in your inventory until used up. Keep this item handy!
+
+JUMP BOOTS (PRESS "J" TO ACTIVATE)
+Enable you to jump much higher than normal. Useful for those hard to reach 
+places or crossing chasms the easy way.
+
+REFLECTIVE SHOTS
+Bullets bounce back at your attackers when you are protected by this powerup.
+Be careful, though, for you are still susceptible to fire and explosives.
+
+ENEMIES
+Puzzles are only part of the challenge ahead. Tchernobog's minions are 
+everywhere, for they know the goal of your quest and will stop at nothing to 
+stop you.
+
+RATS
+While not the deadliest of creatures, these little fiends can be quite 
+hazardous if they mob you, which is their preferred mode of attack.
+
+BATS
+Bats have a nasty tendency of getting in your face when you're trying to get a
+bead on deadlier creatures. Take care of them quickly if you know what's good 
+for you.
+
+SPIDERS (COMPLETE VERSION ONLY)
+Don't be fooled -- spiders are dangerous enemies. The little red ones pack a 
+poison that will blur your vision. The larger green ones can blind you 
+completely for a short time. The poison is cumulative, so the more they bite, 
+the worse the side effects.
+
+ZOMBIES
+These hardy undead menaces move more swiftly than you might expect. Take them 
+out before they get close or you'll taste their rusty axe blades. Also, just 
+because they're down doesn't mean they're dead -- make sure they're down for 
+the count before you move on.
+
+BLOATED BUTCHERS (COMPLETE VERSION ONLY)
+Slower and more deliberate than their axe-wielding comrades, are much tougher 
+to kill. You'll have to dish out a lot of abuse before they go down. Beware of
+the foul goo they vomit at you, for it is both corrosive and unpleasant 
+smelling.
+
+CULTIST
+Tchernobog's human soldiers are accurate and deadly. Whether they wield 
+shotguns or Tommy guns, rest assured they'll give you a good fight. They may 
+also lob dynamite at you from time to time, so listen for the telltale hiss 
+and be ready to dive for cover.
+
+FANATICS
+These Tommy Gun packin' keepers of the dark faith want to spill your precious
+life blood.  Keep your ears tuned for the deadly sounds of dynamite as they
+sometimes offer explosives instead.
+
+GARGOYLES
+Your first encounter with a gargoyle will teach you to keep an eye turned 
+skyward. They are as tough to kill as they are vicious. They hurl sharp bones 
+at you from afar or swoop in to rake at you with their talons.
+
+STONE GARGOYLES
+Stone gargoyles are nigh invulnerable. Bullets bounce off their brittle hides 
+and flames find little purchase. You'll have to be resourceful to survive an 
+encounter with one of these monstrosities.
+
+HELL HOUNDS (COMPLETE VERSION ONLY)
+These fire-breathing mastiffs are swift and deadly. If they get close to you, 
+their powerful jaws will make quick work of you, so keep your distance. . . 
+if you can.
+
+BONE EELS
+Though somewhat timid, bone eels will dart at you the moment you turn your 
+back. They make up in ferocity what they lack in fortitude.
+
+GILL BEASTS (COMPLETE VERSION ONLY)
+If you have to face a gill beast in the water, you're in big trouble. While 
+slow and ponderous above water, in their element they are vicious adversaries.
+
+CHOKING HANDS (COMPLETE VERSION ONLY)
+The corpses that the minions of Tchernobog use to make zombies aren't always 
+in the best of shape. Sometimes, only a limb is salvageable. Usually, the 
+Cabal's surgeons can fashion various bits and pieces into a serviceable undead
+soldier, but certain leftover parts can be effective all on their own. If one 
+of these horrors gets hold of you, you've got to push it off before you can 
+kill it.
+
+PHANTASMS (COMPLETE VERSION ONLY)
+These restless phantoms harvest the souls of their victims with vicious 
+scythes. Because they exist more in the land of the dead than the world of the
+living, they are only vulnerable when attacking.  Watch for them to solidify 
+before striking or your ammo and effort will be wasted.
+
+CHEOGH
+Cheogh rules over all gargoyles, but he has long yearned to hold higher rank 
+in Tchernobog's army. His jealousy toward the Chosen was never secret. 
+Now that you have been cast from Tchernobog's graces, envy has boiled into 
+sheer abiding hatred. He will be anxious to meet you again and express his 
+feelings for you.
+
+SHIAL, MOTHER OF SPIDERS (COMPLETE VERSION ONLY)
+The spider demon Shial makes her lair deep within the earth in the frozen 
+North. Surrounded by her arachnoid spawn, she skulks through darkness, feeding
+on those who hapless souls who stumble into her cavernous labyrinth or are 
+brought there by her loyal children. Those who fall victim to her learn of 
+true agony as she digests them alive.
+
+CERBERUS (COMPLETE VERSION ONLY)
+Named for the mythical guardian of the gates of the underworld, this two-headed 
+firebreathing demon abides in a dark, sulphurous den, hidden to the world of 
+mortals. Ferocious and nigh invulnerable, Cerberus is the deadliest adversary 
+you will face aside from Tchernobog himself. Remember that you must destroy 
+both heads in order to defeat him.
+
+TCHERNOBOG (COMPLETE VERSION ONLY)
+His name is spoken only in whispers, for it is said that his interest is 
+easily roused. Those who peer fully into his smoldering gaze are condemned to 
+madness and death. You must find him before his powers become complete if you 
+are to stand a chance. Even then, defeating him will require all your strength
+and ingenuity. 
+
+NEW ENEMIES HAVE BEEN ADDED TO PLASMA PAK.
+
+Zealots (PLASMA only)
+These blue-robed Tesla Cannon wielding cultists have been through special 
+'training' to make them very mean.  Their armor protects them from 
+electrical damage.
+
+Ackolyte (PLASMA only)
+These cultists-in-traning lob dynamite at you. Keep your ears tuned for 
+the deadly hiss of an incoming bundle.
+
+Priest (PLASMA only)
+These red-robed Chosen-in-training have started their transformation into 
+what you once were....  The Chosen.
+
+Chrysalid Pods (PLASMA only)
+These many-tentacled vegtable patches have trapped many an unwary advesary.
+They spit a vile fluid that is sticky and very difficult to get off.
+
+Fire Pods (PLASMA only)
+These abominations have roots that go down to the bowels of the earth.
+They spew lava and can do serious damage.  Be very careful not to become
+fertilizer.
+
+
+============================================================================
+BLOODBATH
+
+To start a multiplayer game of Blood, run SETUP and select from the following 
+options:
+
+NETWORK GAME
+1.  Choose "Network Game" and press [ENTER].
+2.  Select the number of players (1-8). 
+3.  Leave the socket number at its default unless you experience difficulties,
+    in which case you should ask your network administrator for assistance. 
+4.  Enter a Player Name if you like.
+5.  Select "Launch Blood" and press [ENTER]. The game will begin once the game
+    has found all the players. Press escape at any time to abort before the 
+    game launches.
+
+MODEM GAME
+1.  Choose "Modem Game" and press [ENTER].
+2.  Select either "Wait for Call" or "Dial Your Opponent".
+3.  Select "Setup COM Port" and indicate your modem COM Port. Leave the other 
+    options at their defaults unless you experience difficulties.
+4.  Select "Setup Modem" and find your modem on the list. If you are unsure of
+    the brand, consult your computer documentation. Use the default 
+    initialization, hangup, and dialout strings unless you experience
+    difficulties.
+5.  Enter a Player Name if you like.
+6.  If you are dialing your opponent, select "Phone Number List" and enter 
+    phone number.
+7.  Select "Launch Blood" and press [ENTER]. The game will begin once the 
+    connection has been made.
+
+SERIAL GAME
+1.  Choose "Serial Game" and press [ENTER].
+2.  Select "Setup COM Port" and indicate the COM Port you are using. Leave the
+    other options at their defaults unless you experience difficulties.
+3.  Enter a Player Name if you like.
+4.  Select "Launch Blood" and press [ENTER]. The game will begin once the 
+    connection has been made.
+
+STARTING A NEW NETWORK GAME
+Game Type: Once the game has loaded, you must first select the game type from 
+the Game menu. BloodBath pits players against one another. In cooperative 
+play, players work together to fight monsters and progress through the game 
+in a linear fashion. 
+
+Episode and Level: Next indicate the level you wish to start with by selecting
+the appropriate Episode and Level names. 
+
+Monsters: If you want monsters in your network game, select "Bring 'Em On." 
+You may also select "Respawn" for monsters that regenerate after they are 
+killed.
+
+Weapons: Permanent weapons do not disappear when picked up, so that any player
+can find a weapon regardless of other players' actions within the level. Note 
+that you can only pick up a weapon once -- running over it repeatedly does not
+add ammunition to your inventory. Respawning weapons disappear for a brief 
+time when picked up. Running over a weapon already in your arsenal will add 
+ammunition to your inventory. Select "Respawn with Markers" if you would like 
+a graphic to appear indicating approximately how close an item is to 
+respawning (red means a long wait, yellow a medium wait, and green a short 
+wait). Select "Do Not Respawn" if you want to have a pitchfork showdown.
+
+Items: Select whether you want ammunition and powerups to reappear once picked
+up. As with Weapons, you may set items to respawn with or without markers.
+
+Respawn: (COMPLETE VERSION ONLY) This option affects where players 
+respawn after dying in a BloodBath. With "Random" respawning, you will appear 
+arbitrarily at any one of the respawn points. "Close to Weapons" will spawn 
+you nearest to an available weapon. "Away from Players" will respawn you 
+furthest from other players in the level, giving you a chance to gather some 
+weapons and items before jumping back into battle.
+
+User Map: (COMPLETE VERSION ONLY) Allows you to specify a user map to 
+play.
+
+When you are ready to play, select "Start Game" and press [ENTER].
+
+SENDING MESSAGES
+To communicate with other players during a multiplayer game, press "T" and 
+type your message. Press [ENTER] to send it or [Esc] to abort.
+
+You may send predefined macros by pressing "T" and then selecting F1--F10. 
+Feel free to edit your macros from SETUP. The more creative and vindictive, 
+the better.
+
+TELEPORTERS
+Some Blood levels feature teleporters that appear in BloodBath only. Learn to 
+use these teleporters to get around levels quickly. Teleporter destinations 
+generally appear as animated markers on the floor. Stay away from these in a 
+crowded game--someone might teleport right into you.
+
+THE BRINK OF DEATH
+Sometimes you'll knock BloodBath opponents to their knees instead of killing 
+them outright. The victim spends several moments swaying, poised between life 
+and death. If no one reacts, the victim will slump over and die, earning you a
+point. Of course, because your victim is helpless, you'll have a moment or two
+to gloat. You may end the torture swiftly by blowing the victim's head off. 
+You may also draw it out by tossing a lit bundle of dynamite on the ground 
+nearby. Be careful, though. Victims may bring themselves back from the brink 
+of death by repeatedly hitting the space bar.
+
+You'll recognize the brink of death by the sudden drunken skewing of your 
+view. When this happens, hammer on that spacebar and pray.
+
+==============================================================================
+
+TECHNICAL SUPPORT (U.S. & CANADA)
+
+Assistance Via World Wide Web
+
+Get up-to-the-minute technical information at the GT Interactive
+Software website, at http://www.gtinteractive.com, 24 hours a day, 
+seven days a week. In the Support section you'll have access to our 
+FAQs (Frequently Asked Questions), which contains our latest 
+troubleshooting information.  You can also visit our Forums area, 
+where you can swap email with other gamers, our FTP (File Transfer 
+Protocol) area where you can download patches and new enhancements as 
+soon as they become available, our Hints/Cheat Codes area, an E-Mail 
+area where you can leave us your tech support problems and questions,
+and other areas where you can get valuable information on GT 
+Interactive Software products.
+
+==============================================================================
+
+BLOOD COMMAND-LINE OPTIONS
+
+Options can start with - or /.  File names are assumed to be maps to load.
+
+-?            View current command-line options.
+
+If you are using a serial connection and have obsolete hardware, use this 
+option.
+-8250         Enforce obsolete UART I/O
+              If you are using a serial connection and have obsolete 
+              hardware, use this option.
+
+These options are for online services.  They allow the service's menuing
+system to automatically start a game.
+-auto         Automatic Network start. Implies -quick and -net.  
+              See network INI file description below.
+-getopt       Use network game options from file.  Implies -auto
+
+These control the packet mode that Blood runs in.  The default for <5 
+players is broadcast and >4 is masterslave.
+-broadcast    Set network to broadcast packet mode
+-masterslave  Set network to master/slave packet mode
+
+Start a network game.  This option is automatically passed when running
+a 'network game' from setup, or when running commit.
+-net          Net mode game
+
+This options disables the auto-aiming feature of Blood.  It will be much
+harder to hit monsters (and players) when using this option
+-noaim        Disable auto-aiming
+
+CD-Audio will not be initialized.  The game will still try to play the 
+cutscenes from the location specified in the game INI file, which defaults 
+to the CD-ROM drive.
+-nocd         Disable CD audio
+
+If you just can't hack it....
+-nodudes      No monsters
+
+Enables robust network synchronization checking.  I can't think of a reason
+why you'd want to use this....
+-robust       Robust network sync checking
+
+Set the skills of players.  Controls how much damage you take.
+-skill        Set player handicap; Range:0..4; Default:2; (NOT difficulty 
+              level.)
+
+Useful to get into the game quickly
+-quick        Skip Intro screens and get right to the game
+
+Useful for online services to set your name for you.
+-pname        Override player name setting from config file
+
+Specify a user map to load.  A user map is also loaded if a it is a file
+name on the command line.
+-map          Specify a user map (registered version only)
+
+Make a demo for yourself or to show friends.
+-playback     Play back a demo   (registered version only)
+-record       Record a demo      (registered version only)
+
+These can be used to change the files that Blood uses.
+-art          Specify an art base file name.  Default is TILES.
+              (registered only)
+-snd          Specify an RFF Sound file name.  Default is sounds.rff.
+              (registered only)
+-RFF          Specify an RFF file for Blood game resources.  
+              Default is blood.rff.  (registered only)
+-ini          Specify a game INI file name (default is blood.ini)
+
+NETWORK GAME INI
+
+Network Game INI file format.  Player to start the game uses -getopt,
+all other players use -auto.  The other players just use the Service=
+line, while the starting player reads the entire INI file and starts the
+game according to the parameters.
+
+The format is:
+
+[options]
+Online = commit
+	Online service to use.  Use commit if service emulates commit.
+GameType=1
+	1 = Cooperative
+	2 = Bloodbath
+	3 = Teams
+EpisodeID=0
+	Episode.  Zero based
+LevelID=0
+	Level within episode.  Zero based
+GameDifficulty=2
+	0 = STILL KICKING
+	1 = PINK ON THE INSIDE
+	2 = LIGHTLY BROILED
+	3 = WELL DONE
+	4 = EXTRA CRISPY
+MonsterSettings=0
+	0 = None
+	1 = Bring 'em on
+	2 = Respawn
+WeaponSettings=1
+	0 = Do not Respawn
+	1 = Are Permanent
+	2 = Respawn
+	3 = Respawn with Markers
+ItemSettings=1
+	0 = Do not Respawn
+	1 = Respawn
+	2 = Respawn with Markers
+RespawnSettings=0
+	0 = At Random Locations
+	1 = Close to Weapons
+	2 = Away from Enemies
+UserMapName = mymap.map
+	File name of user map to use
+UserMap	= 1
+	0 = Ignore user map
+	1 = Use user Map.  Episode and Level are ignored.
+
+==============================================================================
+BLOOD TOOLS
+
+Tools for creating art and maps for Blood are contained in the \tools
+directory on the COMPLETE Blood CD-ROM.  You should run the install program
+(install for DOS, winstall for Windows) and place the files in the directory
+where you installed Blood.
+
+==============================================================================
+
+BLOOD CREDITS
+
+Game Designer:
+Nick Newhard
+
+Project Manager:
+Matt Saettler
+
+Lead Programmer:
+Nick Newhard
+
+Programmers:
+Daniel Leeks
+Peter Freese
+Matt Saettler
+
+Lead Artist:
+Kevin Kilstrom
+
+Character Models:
+Kevin Kilstrom
+
+Additional Artwork:
+Terry Hamel
+Eric Klokstad
+Rick Welsh
+Brian Waite
+David Brickley
+
+Level Designers:
+James Wilson III
+Craig Hubbard
+
+Additional Level Design:
+Kevin Kilstrom
+Nick Newhard
+Terry Hamel
+
+Build Engine, Editor, and Tools:
+by Ken Silverman
+
+Network Layer/Setup Program:
+Mark Dochterman
+Nick Newhard
+
+Sound Engine:
+Peter Freese
+Jim Dose
+
+Additional Tools:
+Nick Newhard
+Peter Freese
+
+Music Composed by:
+Daniel Bernstein
+Guy Whitmore
+
+Additional Music by:
+Mike Cody
+
+Sound Development:
+Cassano Thruston
+James Ackley
+Jason Hall
+Guy Whitmore
+Daniel Bernstein
+
+Cultist language and "Pestis Cruento" composed by:
+Daniel Bernstein
+
+Performed by:
+Steve Bryant
+Doug Fullington
+Vernon Nicodemous
+David Stutz
+
+Voice Talent:
+Stephan Weyte as Caleb
+Jason Hall as The Voice (TM)
+
+Additional Vocals by:
+Celeste
+
+Additional Sound Development:
+Loudmouth
+
+Cutscenes:
+Craig Hubbard, writer
+Kevin Kilstrom, art director
+James Wilson III, writer
+Lead 3D Artist/Animator
+Aaron Carlson
+
+3D Animation:
+Peter Arisman
+Derek Bentley
+Benjamin Pierre
+Scott Thurman
+Phillip Ulberg
+Brian Waite
+
+3D Coordinator:
+Paul Renault
+
+Blood Internet Site (www.blood.com):
+Spencer Maiers
+Paul Butterfield
+Adam Ketola
+Kevin Kilstrom
+Craig Hubbard
+
+Quality Assurance:
+Lynne Dayton
+Leonard Salas
+Jim McAvinew
+John Hurst
+Mike Cody
+Rodd Karp
+Wyeth Johnston
+Isaac Barry
+Gary Pope
+Kevin Bailey
+Michael Caine
+
+GTIS Producer and Lead Atmosphere Monger:
+Rick Raymo
+
+Special Thanks:
+Helen Newhard
+Francine Kilstrom
+Lauren Johnson
+Tamara Leeks
+Lisa Sheets
+Evan Stein
+Jason Pratt (aka Pailhead)
+William Mull (aka Phoebus)
+Cho Yan Wong (aka Tempest)
+Kyosho
+Geoff Stratton
+Matt Hayhurst
+George Broussard
+Scott Miller
+Joe Siegler
+Richard Gray
+Andrew Blevins
+
+BLOOD Level Design Credits
+
+THE WAY OF ALL FLESH
+Cradle to Grave                 James Wilson
+Wrong Side of the Tracks        Craig Hubbard
+Phantom Express                 James Wilson
+Dark Carnival                   Kevin Kilstrom, James Wilson
+Hallowed Grounds                Nick Newhard, Craig Hubbard, Terry Hamel
+The Great Temple                Terry Hamel, James Wilson
+Altar of Stone                  James Wilson
+House of Horror                 James Wilson
+
+EVEN DEATH MAY DIE
+Shipwrecked                     Craig Hubbard
+The Lumber Mill                 Craig Hubbard
+Rest for the Wicked             Kevin Kilstrom & Craig Hubbard
+The Overlooked Hotel            Kevin Kilstrom & Craig Hubbard
+The Haunting                    James Wilson & Kevin Kilstrom
+The Cold Rush                   James Wilson
+Bowels of the Earth             James Wilson
+The Lair of Shial               James Wilson
+Thin Ice                        James Wilson
+
+FAREWELL TO ARMS
+Ghost Town                      James Wilson
+The Siege                       Craig Hubbard
+Raw Sewage                      James Wilson
+The Sick Ward                   Craig Hubbard
+Spare Parts                     James Wilson & Craig Hubbard
+Monster Bait                    James Wilson & Terry Hamel
+The Hall of Cerberus            Craig Hubbard
+In the Dog House                James Wilson
+
+DEAD RECKONING
+Butchery Loves Company          James Wilson
+Breeding Grounds                James Wilson
+Sacrificial Orifice             James Wilson
+Charnel Bog                     Kevin Kilstrom
+Fire and Brimstone              James Wilson
+The Ganglion Depths             James Wilson & Terry Hamel
+A Separate Piece                Craig Hubbard & Nick Newhard
+The Hall of the Epiphany        Kevin Kilstrom & 
+Mall of the Dead                James Wilson & Craig Hubbard
+
+BLOOD CD-Audio Credits
+
+Pestis Cruento                      Daniel Bernstein
+Unholy Voices                       Daniel Bernstein
+Dark Carnival                       Daniel Bernstein
+Infuscomus                          Guy Whitmore and Daniel Bernstein
+Father Time                         Daniel Bernstein
+Waiting for the End                 Daniel Bernstein
+Fate of the Damned                  Mike Cody and Daniel Bernstein
+Double, Double, toil and trouble    Guy Whitmore and Daniel Bernstein
+
+You may freely distribute Blood shareware provided that you include all the
+original files and that you do not charge for distribution.
+
+You may not distribute the Retail version of the shareware.

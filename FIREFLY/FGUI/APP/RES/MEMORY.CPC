@@ -1,0 +1,110 @@
+Window/ Ressources2
+	.Title				= "Memory"
+	.Parameters			= "TYPE:0"
+	.PX					= "150"
+	.Icon				= "OS/FIREFLY/IMG/ICN/MS.PNG"
+	.PY					= "150"
+	.SX					= "415"
+	.SY					= "450"
+	.BackColor  		= "050,050,050"
+@#SYSRE Create/
+End/ Window
+
+
+Button/ Head_1
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "0"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "CPU"
+	.Event				= "%_Exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_2
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "105"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "Memory"
+	.Event				= "%_Exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_3
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "210"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text				= "CPCVER"
+	.Event				= "%_Exe_path_%=Click"
+Create/
+End/ Button
+
+
+Button/ Head_4
+	.Handle				= "%SYSRE%"
+	.Parameters			= "IMGAUTO:2"
+	.PX					= "315"
+	.PY					= "0"
+	.SX					= "100"
+	.SY					= "80"
+	.Image				= "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+	.Text 				= "User"
+	.Event				= "%_Exe_path_%=Click"
+Create/
+End/ Button
+
+
+Textblock/ GO_M
+	.Handle				= "%SYSRE%"
+	.Parameters			= "BORD:0 COL:0"
+	.PX					= "10"
+	.PY					= "130"
+	.SX					= "390"
+	.SY					= "80"
+	.Text				= "Memory used in GO : ${CPC.SYS.MEMU.G}"
+	.TextColor  		= "255,255,255"
+Create/
+End/ Textblock
+
+
+Textblock/ GO_MU
+	.Handle				= "%SYSRE%"
+	.Parameters			= "BORD:0 COL:0"
+	.PX					= "10"
+	.PY					= "170"
+	.SX					= "390"
+	.SY					= "80"
+	.Text				= "Memory Free in GO : ${CPC.SYS.MEM.G}"
+	.TextColor  		= "255,255,255"
+Create/
+End/ Textblock
+
+
+Function/ Head_1.Click()
+Exe/ & OS/FIREFLY/FGUI/APP/RES/CPU.CPC
+Close/ Ressources2
+End/ Function
+
+
+Function/ Head_3.Click()
+Exe/ & OS/FIREFLY/FGUI/APP/RES/CPCVER.CPC
+Close/ Ressources2
+End/ Function
+
+Function/ Head_4.Click()
+Exe/ & OS/FIREFLY/FGUI/APP/RES/USER_S.CPC
+Close/ Ressources2
+End/ Function
