@@ -5,7 +5,7 @@ Window/ Panel
     .PX             = "1"
     .PY             = "22"
     .SX             = "150"
-    .SY             = "201"
+    .SY             = "226"
     .BackColor      = "255,145,000"
     .Opacity        = "128"
 @#PNL Create/
@@ -56,7 +56,7 @@ Button/ TerminalBTN
 Create/
 End/ Button
 
-Button/ Panel_Close
+Button/ BTN_FZIP
     .Parameters     = "IMGAUTO:2"
     .Handle         = "%PNL%"
     .PX             = "0"
@@ -65,7 +65,7 @@ Button/ Panel_Close
     .SY             = "25"
     .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
     .Opacity        = "128"
-    .Text           = "Close"
+    .Text           = "FireZip"
     .TextColor      = "056,056,056"
     .Event          = "%_exe_path_%=MouseClick"
 Create/
@@ -116,8 +116,9 @@ Button/ CST_WLP
     .TextColor      = "056,056,056"
     .Event          = "%_exe_path_%=MouseClick"
 Create/
+End/ Button
 
-Button/ BTN_FZIP
+Button/ Panel_Close
     .Parameters     = "IMGAUTO:2"
     .Handle         = "%PNL%"
     .PX             = "0"
@@ -126,10 +127,33 @@ Button/ BTN_FZIP
     .SY             = "25"
     .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
     .Opacity        = "128"
-    .Text           = "Firezip"
+    .Text           = "Close"
     .TextColor      = "056,056,056"
     .Event          = "%_exe_path_%=MouseClick"
 Create/
+End/ Button
+
+
+Button/ Installeur
+    .Parameters     = "IMGAUTO:2"
+    .Handle         = "%PNL%"
+    .PX             = "0"
+    .PY             = "200"
+    .SX             = "150"
+    .SY             = "25"
+    .Image          = "OS/FIREFLY/IMG/ICN/BTN/BTN_OR.PNG"
+    .Opacity        = "128"
+    .Text           = "Installer"
+    .TextColor      = "056,056,056"
+    .Event          = "%_exe_path_%=MouseClick"
+Create/
+End/ Button
+
+
+Function/ Installeur.MouseClick()
+    Exe/ & OS/FIREFLY/FGUI/APP/INS_UI.CPC
+    Close/ Panel
+End/ Function
 
 Function/ Panel_Close.MouseClick()
     Close/ Panel

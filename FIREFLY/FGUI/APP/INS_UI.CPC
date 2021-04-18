@@ -1,0 +1,47 @@
+SET/ P_Content = C:/CPCDOS/OS/FIREFLY/LOGIN/Philipe.FXT
+@#ContentContent Open/ %P_Content%
+
+Window/ UI
+    .Title              = "FireFly Offline Setup"
+    .PX                 = "400"
+    .PY                 = "350"
+    .SX                 = "400"
+    .SY                 = "350"
+    .BackColor          = "075,075,075"
+    .TitleColor         = "028,042,090"
+@#Win_UI Create/
+End/ Window
+
+
+Textblock/ WDYWI
+    .Parameters         = "COL:0"
+    .Handle             = "%Win_UI%"
+    .PX                 = "50"
+    .PY                 = "50"
+    .SX                 = "350"
+    .SY                 = "30"
+    .TextColor          = "255,125,004"
+    .Text               = "What do you wanna install %ContentContent% ?"
+Create/
+End/ Textblock
+
+
+Button/ Games_INS
+    .Parameters         = "COL:0"
+    .Handle             = "%Win_UI%"
+    .PX                 = "25"
+    .PY                 = "300"
+    .SX                 = "80"
+    .SY                 = "30"
+    .BackColor          = "255,153,000"
+    .TextColor          = "000,000,000"
+    .Text               = "Games"
+    .Event              = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Function/ Games_INS.Click()
+    Exe/ & OS/FIREFLY/INST/GAMES/INSG.CPC
+    Close/ UI
+End/ Function

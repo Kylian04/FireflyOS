@@ -1,0 +1,11 @@
+Window/ INST_1
+    .Parameters         = ""
+    .Title              = "FireFly Offline Setup"
+    .PX                 = "400"
+    .PY                 = "350"
+    .SX                 = "400"
+    .SY                 = "350"
+    .BackColor          = "255,255,255"
+    .TitleColor         = "252,169,015"
+@#INSUI Create/
+End/ Window
