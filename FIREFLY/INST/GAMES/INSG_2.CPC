@@ -1,0 +1,71 @@
+Window/ INST_2
+    .Parameters         = "TYPE:0 SIZBTN:0 SIZ:0"
+    .TitleImg           = "OS/FIREFLY/INST/RES/BAR.PNG"
+    .Icon               = "OS/FIREFLY/IMG/ICN/Set_icn.png"
+    .Title              = "FireFly Setup"
+    .PX                 = "200"
+    .PY                 = "100"
+    .SX                 = "450"
+    .SY                 = "400"
+    .BackColor          = "204,204,204"
+    .TitleColor         = "037,037,037"
+@#INSUI Create/
+End/ Window
+
+
+Textblock/ Warning
+    .Handle             = "%INSUI%"
+    .PX                 = "50"
+    .PY                 = "200"
+    .SX                 = "400"
+    .SY                 = "30"
+    .Text               = "Warning: You can't reinstall game %CPC.CRLF% if you press the button"
+    .TextColor          = "255,059,059"
+    .BackColor          = "204,204,204"
+Create/
+End/ Textblock
+
+Button/ Uninstall_BTN
+    .Parameters         = "COL:1"
+    .Handle             = "%INSUI%"
+    .BackColor          = "255,123,000"
+    .TextColor          = "017,012,000"
+    .Text               = "Delete Zip?"
+    .PX                 = "280"
+    .PY                 = "359"
+    .SX                 = "90"
+    .SY                 = "30"
+    .Event              = "%_exe_path_%=Click"
+Create/
+End/ Button
+
+
+Picturebox/ Head_UI
+    .Parameters         = "IMGAUTO:1"
+    .Handle             = "%INSUI%"
+    .Image              = "OS/FIREFLY/INST/RES/Head.PNG"
+    .PX                 = "0"
+    .PY                 = "0"
+    .SX                 = "450"
+    .SY                 = "80"
+Create/
+End/ Picturebox
+
+
+Picturebox/ Down_UI
+    .Parameters         = "IMGAUTO:1"
+    .Handle             = "%INSUI%"
+    .Image              = "OS/FIREFLY/INST/RES/Down.PNG"
+    .PX                 = "0"
+    .PY                 = "350"
+    .SX                 = "450"
+    .SY                 = "50"
+Create/
+End/ Picturebox
+
+
+
+Function/ Uninstall_BTN.Click()
+    Delete/ OS/FIREFLY/GAMES/GAMES.zip
+    Close/ INST_2
+End/ Function

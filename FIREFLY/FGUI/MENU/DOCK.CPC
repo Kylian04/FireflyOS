@@ -60,28 +60,6 @@ Function/ Open_Bar.Click()
     exe/ & OS/FIREFLY/FGUI/MENU/INSIDE.CPC
 End/ Function
 
-
-Window/ WLC_WIN
-    .Title          = "Welcome User"
-    .PX             = "300"
-    .PY             = "100"
-    .SX             = "500"
-    .SY             = "250"
-    .BackColor      = "000,000,000"
-    .TitleColor     = "007,028,150"
-@#WLC_Var Create/
-End/ Window
-
-Picturebox/ WLC_PIC
-    .Handle         = "%WLC_Var%"
-    .Image          = "OS/FIREFLY/IMG/USR/WLC.PNG"
-    .PX             = "0"
-    .PY             = "0"
-    .SX             = "500"
-    .SY             = "250"
-Create/
-End/ Picturebox
-
 Refresh/ /all
 
 
